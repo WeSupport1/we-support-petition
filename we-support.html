@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statement of Support for Merab Sharikadze</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 30px auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    p {
+        line-height: 1.6;
+        color: #555;
+    }
+    form {
+        margin-top: 30px;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    button {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    .thank-you {
+        display: none;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+        color: green;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <img src="merab.jpg" alt="Merab Sharikadze">
+    <h1>Statement of Support for Merab Sharikadze</h1>
+    <p>To the Honorable Court and Rugby Disciplinary Committee,</p>
+    <p>We, the undersigned fans and supporters of rugby, respectfully submit this statement in support of Merab Sharikadze.</p>
+    <p>We acknowledge the seriousness of doping regulations and the importance of maintaining integrity in sport. However, we believe that in this particular case, the incident was an inadvertent mistake, not an act of deliberate wrongdoing.</p>
+    <p>Merab Sharikadze has long been regarded as one of the most respected and influential figures in Georgian rugby. As captain of the national team, he has consistently demonstrated integrity, leadership, and an unwavering commitment to the sport and to his country. His professionalism and dedication have earned him deep admiration from fans.</p>
+    <p>As fans, we deeply feel Merab’s absence on the field, therefore we kindly ask to consider the voice of the people and to shorten his sanction, allowing him to return to the field where he truly belongs. We believe that every person deserves one opportunity for redemption.</p>
+    <p>We appeal to your sense of fairness, compassion and belief in second chances. Let this case serve as a message of accountability and humanity, allowing Merab Sharikadze to return to the game he loves so that he can continue serving Georgian rugby with the same heart and passion he has always shown.</p>
+    <p>Respectfully,</p>
+
+    <form id="petitionForm">
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <input type="text" id="surname" name="surname" placeholder="Surname" required>
+        <button type="submit">Sign Petition</button>
+    </form>
+
+    <div class="thank-you" id="thankYouMessage">
+        Thank you for supporting Merab Sharikadze!
+    </div>
+</div>
+
+<script>
+    document.getElementById('petitionForm').addEventListener('submit', function(e){
+        e.preventDefault();
+        document.getElementById('petitionForm').style.display = 'none';
+        document.getElementById('thankYouMessage').style.display = 'block';
+    });
+</script>
+</body>
+</html>
+
